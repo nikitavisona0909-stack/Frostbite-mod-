@@ -1,0 +1,29 @@
+name: Gayzer 
+type: SteamVent
+blendGroup: coldstone
+parent: coldstone 
+attributes: {
+   steam: 1
+}
+
+
+effectSpacing: 15
+effect:{
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            lifetime: 120
+            sizeInterp: slope
+            length: 45
+            baseLength: 4
+            sizeFrom: 4
+            sizeTo: 8
+            colorFrom: 556DE4FF
+            colorTo: 7489F3FF
+            layer: 61.8
+            cone: 45
+            baseRotation: 30
+        }
+    ]
+}

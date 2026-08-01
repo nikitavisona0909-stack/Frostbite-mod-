@@ -1,0 +1,5 @@
+type: Floor
+name: "coldstone"
+variants: 3
+playerUnmineable: false
+
