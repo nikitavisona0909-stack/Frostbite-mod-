@@ -1,0 +1,23 @@
+{
+   "name": "Обсидиановая стена",
+   "type": "Wall",
+   "description": "",
+   "health": 320,
+   "size": 1,
+   "requirements": [
+       {"item": "obsidian", "amount": 5}
+   ],
+   "research": {
+       "parent": "core-spark",
+       "requirements": [
+           {"item": "obsidian", "amount": 60}
+       ],
+       "objectives": [
+         {
+            "type": "OnSector",
+            "preset": "cold-side"
+         }
+       ]
+   },
+   "category": "defense"
+}
