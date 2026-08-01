@@ -1,0 +1,24 @@
+{
+   "name": "Хромовый бур",
+   "description": "",
+   "type": "Drill",
+   "tier": 3,
+   "drillTime": 840,
+   "size": 2,
+   "requirements": [
+      {"item": "obsidian", "amount": 10},
+   ],
+   "research": {
+      "parent": "core-spark",
+      "requirements": [
+         {"item": "obsidian", "amount": 30},
+      ],
+      "objectives": [
+       {
+         "type": "OnSector",
+         "preset": "cold-side"
+       }
+      ]
+   },
+   "category": "production"
+}

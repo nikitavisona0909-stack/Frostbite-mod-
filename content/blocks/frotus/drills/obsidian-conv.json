@@ -1,0 +1,24 @@
+{
+   "type": "Conveyor",
+   "name": "Обсидиановый конвейер",
+   "description": "",
+   "requirements": [
+        {"item": "obsidian", "amount": 1},
+   ],
+   "category": "distribution",
+   "speed": 0.20,
+   "displayedSpeed": 2,
+   "health": 450,
+   "research": {
+        "parent": "core-spark",
+        "requirements": [
+              {"item": "obsidian", "amount": 10}
+        ],
+        objectives: [
+        {
+            type: "OnSector",
+            preset: "cold-side"
+        }
+    ]
+   }
+}

@@ -1,0 +1,12 @@
+type: Router
+name: "Распределитель"
+description: "Это роутер"
+size: 1
+health: 60
+
+requirements: [
+  obsidian/4
+]
+
+category: distribution
+research: obsidian-conv
