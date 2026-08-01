@@ -1,0 +1,6 @@
+type: StaticWall
+name: "ColdstoneWall"
+size: 1
+variants : 2
+
+
