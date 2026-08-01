@@ -1,0 +1,10 @@
+{
+   "type": "material",
+   "name": "Обсидиан",
+   "description": "Прочный, используется в строительстве и производстве юнитов",
+   "hardness": 1,
+   "color": "666666",
+   "research": {
+      "parent": "core-spark"
+   }
+}
