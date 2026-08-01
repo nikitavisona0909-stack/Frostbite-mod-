@@ -1,0 +1,29 @@
+{
+  "type": "UnitFactory",
+  "name": "Конструктор Ходков",
+  "size": 3,
+  
+  "plans": [
+    {
+      "unit": "frost",
+      "time": 560,
+      "requirements": [
+        "obsidian/35"
+      ]
+    }
+  ],
+  
+  "requirements": [
+    "obsidian/170"
+  ],
+  
+  
+  "category": "units",
+  
+  "research": {
+    "parent": "core-spark",
+    "requirements": [
+      "obsidian/85"
+    ]
+  }
+}
