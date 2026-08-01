@@ -1,0 +1,28 @@
+{
+   "type": "itemTurret"
+   "name": "Орб",
+   "description": "Стреляет пулями наносят мало урона",
+   "health": 350,
+   "size": 1,
+   "range": 250,
+   "ammoTypes": {
+      "obsidian": {
+           "speed": 3.0,
+           "damage": 6,
+           "type": "BasicBulletType"
+      }
+   },
+   "requirements": [
+      {"item": "obsidian", "amount": 30},
+   ],
+   "research": {
+       "parent": "core-spark"
+       "requirements": [
+          {"item": "obsidian", "amount": 100},
+       ],
+       "objectives": [
+          {"type": "OnSector", "preset": "cold-side"}
+       ]
+   },
+   "category": "turret"
+}
