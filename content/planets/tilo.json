@@ -1,0 +1,67 @@
+generator: SerpuloPlanetGenerator
+parent: Frotus
+localizedName: "Тилло",
+iconColor: 00d8ff
+orbitRadius: 10
+hasAtmosphere: true,
+updateLighting: true,
+atmosphereRadIn: 0.5,
+atmosphereRadOut: 0.7,
+atmosphereColor: 00d8ff,
+drawOrbit: true,
+
+accessible: false
+alwaysUnlocked: false
+sectorSeed: 520
+startSector: 1
+sectorSize: 2
+solarSystem: sun
+
+clearSectorOnLose: true
+allowSectorInvasion: false
+allowLaunchToNumbered: false
+	
+cloudMesh: {
+  type: HexSkyMesh
+  planet: druol
+  seed: 6
+  speed: 2
+  radius: 0.3
+  divisions: 6
+  color: 00d8ff
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+
+cloudMesh: {
+  type: HexSkyMesh
+  planet: druol
+  seed: 6
+  speed: 1
+  radius: 0.08
+  divisions: 6
+  color: 00ff5d
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.34
+}
+
+mesh: {
+    type: NoiseMesh
+    planet: druol
+    seed: 56164
+    color1: 00a33b
+    color2: 00ff5d
+    divisions: 6
+    radius: 0.5
+    octaves: 9
+    persistence: 1
+    scl: 0.5
+    mag: 0.2
+}
+	
+itemWhiteList: [
+]

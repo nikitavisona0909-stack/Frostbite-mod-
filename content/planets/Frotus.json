@@ -1,0 +1,72 @@
+generator: SerpuloPlanetGenerator
+parent: sun
+localizedName: "Фротус",
+iconColor: 00d8ff
+orbitRadius: 68
+hasAtmosphere: true,
+updateLighting: true,
+atmosphereRadIn: 0.05,
+atmosphereRadOut: 0.1,
+atmosphereColor: 00d8ff,
+drawOrbit: true,
+
+accessible: true
+alwaysUnlocked: true
+sectorSeed: 520
+startSector: 1
+sectorSize: 2
+solarSystem: sun
+
+clearSectorOnLose: true
+allowSectorInvasion: false
+allowLaunchToNumbered: false
+	
+cloudMesh: {
+  type: HexSkyMesh
+  planet: druol
+  seed: 6
+  speed: 2
+  radius: 0.3
+  divisions: 6
+  color: 00d8ff
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+
+cloudMesh: {
+  type: HexSkyMesh
+  planet: druol
+  seed: 6
+  speed: 1
+  radius: 0.08
+  divisions: 6
+  color: 00d8ff
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.56
+}
+
+mesh: {
+    type: NoiseMesh
+    planet: druol
+    seed: 56164
+    color1: acacac
+    color2: 747474
+    divisions: 6
+    radius: 1.0
+    octaves: 9
+    persistence: 1
+    scl: 0.1
+    mag: 0.2
+}
+	
+itemWhiteList: [
+    "jeronium",
+    "plunium",
+    "hinium",
+    "wenium",
+    "relium"
+]
