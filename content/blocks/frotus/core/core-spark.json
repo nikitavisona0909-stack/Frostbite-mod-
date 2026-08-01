@@ -1,0 +1,26 @@
+{
+   "type": CoreBlock
+   "name": "Ядро Вспышка"
+   "category": effect
+   "health": 1700
+   "size": 3
+   "itemCapacity": 6500
+   "unitCapModifier": 10
+
+   "incinerateNonBuildable": true
+   "isFirstTier": true
+   "squareSprite": false
+   "unitType": "cold"
+
+   "requirements": [
+     {"item": "obsidian", "amount": 5500}
+   ]
+
+"research": {
+    "root": true
+    "name": Фротус
+   	"planet": Frotus
+}
+
+   "alwaysUnlocked": true
+}
