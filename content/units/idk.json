@@ -1,0 +1,30 @@
+type:flying
+name: "Снег"
+speed: 1
+flying: true
+health: 150
+engineOffset: 0
+range: 160
+  "weapons": [
+  {
+   name: craterg
+  reload: 20
+  rotate: true
+  x: 3
+  y: 0
+  range: 160
+  shootSound: shoot
+  bullet: {
+    type: standardThorium
+    speed: 4
+    damage: 6
+    color: 80CB7
+    }
+    }
+    ]
+  research: {
+parent: Desert-factory
+requirements: [
+ obsidian/400
+ ]
+}
