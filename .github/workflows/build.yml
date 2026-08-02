@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Архивируем мод
-      run: zip -r Frostbite-mod.zip content sprites mod.hjson README.md
+      run: zip -r Frostbite-mod.zip content sprites mod.json icon.png schematics maps bundles
     
     - name: Сохраняем артефакт
       uses: actions/upload-artifact@v4
