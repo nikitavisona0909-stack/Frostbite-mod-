@@ -17,7 +17,7 @@ jobs:
     - name: Создаём папку мода
       run: |
         mkdir frostbite-mod-
-        cp -r content sprites mod.hjson README.md frostbite-beta/
+        cp -r content sprites mod.hjson README.md frostbite-mod-/
     
     - name: Архивируем мод
       run: zip -r frostbite-mod-.zip frostbite-mod-
