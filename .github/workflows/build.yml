@@ -14,16 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Создаём папку мода
-      run: |
-        mkdir frostbite-mod-
-        cp -r content sprites mod.hjson README.md frostbite-mod-/
-    
     - name: Архивируем мод
-      run: zip -r frostbite-mod-.zip frostbite-mod-
+      run: zip -r Frostbite-mod.zip content sprites mod.hjson README.md
     
     - name: Сохраняем артефакт
       uses: actions/upload-artifact@v4
       with:
-        name: frostbite-mod-
-        path: frostbite-mod-.zip
+        name: Frostbite-mod
+        path: Frostbite-mod.zip
