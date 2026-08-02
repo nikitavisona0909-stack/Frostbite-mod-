@@ -1,0 +1,29 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Создаём папку мода
+      run: |
+        mkdir frostbite-mod-
+        cp -r content sprites mod.hjson README.md frostbite-beta/
+    
+    - name: Архивируем мод
+      run: zip -r frostbite-mod-.zip frostbite-mod-
+    
+    - name: Сохраняем артефакт
+      uses: actions/upload-artifact@v4
+      with:
+        name: frostbite-mod-
+        path: frostbite-mod-.zip
